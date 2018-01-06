@@ -10,15 +10,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="Take the challenge and try this Science Quiz"
+            android:text="@string/titleText"
             android:textAppearance="?android:textAppearanceLarge"
             android:textStyle="bold" />
 
@@ -26,27 +26,21 @@
             android:id="@+id/name_edit_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:hint="Enter your name here"
+            android:hint="@string/editNameText"
             android:inputType="textCapWords" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="1. This picture shows an object in space that has an icy core with a tail of gas and dust that extends millions of miles. What is this?"
+            android:text="@string/question1"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <ImageView
             android:id="@+id/comet_image_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:scaleType="fitCenter"
             android:src="@drawable/comet_image" />
@@ -55,8 +49,6 @@
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
 
@@ -65,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on1AnswerRadioButtonClicked"
-                android:text="A star"
+                android:text="@string/answer1.1"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -73,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on1AnswerRadioButtonClicked"
-                android:text="An asteroid"
+                android:text="@string/answer1.2"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -81,7 +73,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on1AnswerRadioButtonClicked"
-                android:text="A comet"
+                android:text="@string/answer1.3"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -89,7 +81,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on1AnswerRadioButtonClicked"
-                android:text="A moon"
+                android:text="@string/answer1.4"
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
@@ -97,17 +89,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="2. Which kind of waves are used to make and receive cellphone calls?"
+            android:text="@string/question2"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
 
@@ -116,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on2AnswerRadioButtonClicked"
-                android:text="Sound waves"
+                android:text="@string/answer2.1"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -124,7 +112,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on2AnswerRadioButtonClicked"
-                android:text="Radio waves"
+                android:text="@string/answer2.2"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -132,7 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on2AnswerRadioButtonClicked"
-                android:text="Gravity waves"
+                android:text="@string/answer2.3"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -140,24 +128,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on2AnswerRadioButtonClicked"
-                android:text="Visible light waves"
+                android:text="@string/answer2.4"
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="3. There are three layers of the Earth. Which one is the hottest?"
+            android:text="@string/question3"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
 
@@ -166,7 +150,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on3AnswerRadioButtonClicked"
-                android:text="Earth's Crust"
+                android:text="@string/answer3.1"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -174,7 +158,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on3AnswerRadioButtonClicked"
-                android:text="Earth's Mantle"
+                android:text="@string/answer3.2"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -182,7 +166,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on3AnswerRadioButtonClicked"
-                android:text="Earth's Outer Core"
+                android:text="@string/answer3.3"
                 android:textAppearance="?android:textAppearanceMedium" />
 
         </RadioGroup>
@@ -190,17 +174,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="4. Which is the main way that ocean tides are created?"
+            android:text="@string/question4"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
 
@@ -209,7 +189,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on4AnswerRadioButtonClicked"
-                android:text="The rotation of the Earth on its axis"
+                android:text="@string/answer4.1"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -217,7 +197,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on4AnswerRadioButtonClicked"
-                android:text="The gravitational pull of the moon"
+                android:text="@string/answer4.2"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -225,7 +205,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on4AnswerRadioButtonClicked"
-                android:text="The gravitational pull of the sun"
+                android:text="@string/answer4.3"
                 android:textAppearance="?android:textAppearanceMedium" />
 
         </RadioGroup>
@@ -233,17 +213,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="5. What does a light-year measure?"
+            android:text="@string/question5"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
 
@@ -252,7 +228,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on5AnswerRadioButtonClicked"
-                android:text="Brightness"
+                android:text="@string/answer5.1"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -260,7 +236,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on5AnswerRadioButtonClicked"
-                android:text="Time"
+                android:text="@string/answer5.2"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -268,7 +244,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on5AnswerRadioButtonClicked"
-                android:text="Distance"
+                android:text="@string/answer5.3"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -276,25 +252,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on5AnswerRadioButtonClicked"
-                android:text="Weight"
+                android:text="@string/answer5.4"
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="6. Which picture best illustrates what happens when light passes through a magnifying glass?"
+            android:text="@string/question6"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <ImageView
             android:id="@+id/magnifying_image_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:scaleType="fitCenter"
             android:src="@drawable/magnifying_glass" />
@@ -302,8 +274,6 @@
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
@@ -347,17 +317,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="7. Which physical phenomenon is measured with Richter scale?"
+            android:text="@string/question7"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
 
@@ -366,7 +332,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on7AnswerRadioButtonClicked"
-                android:text="Earthquake"
+                android:text="@string/answer7.1"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -374,7 +340,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on7AnswerRadioButtonClicked"
-                android:text="Hurricane"
+                android:text="@string/answer7.2"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -382,7 +348,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on7AnswerRadioButtonClicked"
-                android:text="Tsunami"
+                android:text="@string/answer7.3"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -390,7 +356,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on7AnswerRadioButtonClicked"
-                android:text="Solar radiation"
+                android:text="@string/answer7.4"
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
@@ -398,17 +364,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="8. Which element is needed to make nuclear energy?"
+            android:text="@string/question8"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
 
@@ -417,7 +379,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on8AnswerRadioButtonClicked"
-                android:text="Sodium chloride"
+                android:text="@string/answer8.1"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -425,7 +387,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on8AnswerRadioButtonClicked"
-                android:text="Uranium"
+                android:text="@string/answer8.2"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -433,7 +395,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on8AnswerRadioButtonClicked"
-                android:text="Nitrogean"
+                android:text="@string/answer8.3"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -441,25 +403,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on8AnswerRadioButtonClicked"
-                android:text="Carbon dioxide"
+                android:text="@string/answer8.4"
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="9. Who has developed the polio vaccine?"
+            android:text="@string/question9"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <ImageView
             android:id="@+id/polio_vaccine_image_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:scaleType="fitCenter"
             android:src="@drawable/polio_vaccine" />
@@ -467,8 +425,6 @@
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
 
@@ -477,7 +433,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on9AnswerRadioButtonClicked"
-                android:text="Marie Curie"
+                android:text="@string/answer9.10.1"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -485,7 +441,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on9AnswerRadioButtonClicked"
-                android:text="Isaac Newton"
+                android:text="@string/answer9.2"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -493,7 +449,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on9AnswerRadioButtonClicked"
-                android:text="Albert Einstein"
+                android:text="@string/answer9.3"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <RadioButton
@@ -501,7 +457,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="on9AnswerRadioButtonClicked"
-                android:text="Jonas Salk"
+                android:text="@string/answer9.4"
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
@@ -509,53 +465,44 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="10. Which of these scientists have won two nobel prizes?"
+            android:text="@string/question10"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <CheckBox
             android:id="@+id/marieCurie_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="Marie Curie"
+            android:text="@string/answer9.10.1"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <CheckBox
             android:id="@+id/linusPauling_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:text="Linus Pauling"
+            android:text="@string/answer10.2"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <CheckBox
             android:id="@+id/johnBardeen_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:text="John Bardeen"
+            android:text="@string/answer10.3"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <CheckBox
             android:id="@+id/frederickSanger_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:text="Frederick Sanger"
+            android:text="@string/answer10.4"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
             <Button
@@ -564,7 +511,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="submitAnswers"
-                android:text="Submit" />
+                android:text="@string/submit" />
 
             <Button
                 android:id="@+id/reset_button"
@@ -572,7 +519,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="resetButton"
-                android:text="Reset" />
+                android:text="@string/reset" />
 
             <Button
                 android:id="@+id/exit_button"
@@ -580,7 +527,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="exitApp"
-                android:text="Exit" />
+                android:text="@string/exit" />
 
         </LinearLayout>
 
