@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Take the challenge and try this Science Quiz"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name_edit_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Enter your name here"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1. This picture shows an object in space that has an icy core with a tail of gas and dust that extends millions of miles. What is this?"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/comet_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/comet_image" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/star_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on1AnswerRadioButtonClicked"
+                android:text="A star"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/asteroid_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on1AnswerRadioButtonClicked"
+                android:text="An asteroid"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/comet_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on1AnswerRadioButtonClicked"
+                android:text="A comet"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/moon_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on1AnswerRadioButtonClicked"
+                android:text="A moon"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="2. Which kind of waves are used to make and receive cellphone calls?"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/sound_waves_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on2AnswerRadioButtonClicked"
+                android:text="Sound waves"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/radio_waves_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on2AnswerRadioButtonClicked"
+                android:text="Radio waves"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/gravity_waves_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on2AnswerRadioButtonClicked"
+                android:text="Gravity waves"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/light_waves_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on2AnswerRadioButtonClicked"
+                android:text="Visible light waves"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="3. There are three layers of the Earth. Which one is the hottest?"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/crust_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on3AnswerRadioButtonClicked"
+                android:text="Earth's Crust"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/mantle_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on3AnswerRadioButtonClicked"
+                android:text="Earth's Mantle"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/core_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on3AnswerRadioButtonClicked"
+                android:text="Earth's Outer Core"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="4. Which is the main way that ocean tides are created?"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rotation_axis_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on4AnswerRadioButtonClicked"
+                android:text="The rotation of the Earth on its axis"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/gravity_moon_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on4AnswerRadioButtonClicked"
+                android:text="The gravitational pull of the moon"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/gravity_sun_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on4AnswerRadioButtonClicked"
+                android:text="The gravitational pull of the sun"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="5. What does a light-year measure?"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/brightness_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on5AnswerRadioButtonClicked"
+                android:text="Brightness"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/time_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on5AnswerRadioButtonClicked"
+                android:text="Time"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/distance_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on5AnswerRadioButtonClicked"
+                android:text="Distance"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/weight_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on5AnswerRadioButtonClicked"
+                android:text="Weight"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="6. Which picture best illustrates what happens when light passes through a magnifying glass?"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/magnifying_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/magnifying_glass" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/magnifying1_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="on6AnswerRadioButtonClicked"
+                android:text="1"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/magnifying2_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="on6AnswerRadioButtonClicked"
+                android:text="2"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/magnifying3_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="on6AnswerRadioButtonClicked"
+                android:text="3"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/magnifying4_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="on6AnswerRadioButtonClicked"
+                android:text="4"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="7. Which physical phenomenon is measured with Richter scale?"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/earthquake_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on7AnswerRadioButtonClicked"
+                android:text="Earthquake"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/hurricane_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on7AnswerRadioButtonClicked"
+                android:text="Hurricane"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/tsunami_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on7AnswerRadioButtonClicked"
+                android:text="Tsunami"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/solar_radiation_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on7AnswerRadioButtonClicked"
+                android:text="Solar radiation"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="8. Which element is needed to make nuclear energy?"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/sodium_chloride_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on8AnswerRadioButtonClicked"
+                android:text="Sodium chloride"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/uranium_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on8AnswerRadioButtonClicked"
+                android:text="Uranium"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/nitrogean_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on8AnswerRadioButtonClicked"
+                android:text="Nitrogean"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/carbon_dioxide_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on8AnswerRadioButtonClicked"
+                android:text="Carbon dioxide"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="9. Who has developed the polio vaccine?"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/polio_vaccine_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/polio_vaccine" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/marieCurie_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on9AnswerRadioButtonClicked"
+                android:text="Marie Curie"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/isaacNewton_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on9AnswerRadioButtonClicked"
+                android:text="Isaac Newton"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/albertEinstein_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on9AnswerRadioButtonClicked"
+                android:text="Albert Einstein"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/jonasSalk_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="on9AnswerRadioButtonClicked"
+                android:text="Jonas Salk"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="10. Which of these scientists have won two nobel prizes?"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/marieCurie_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Marie Curie"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/linusPauling_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Linus Pauling"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/johnBardeen_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="John Bardeen"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/frederickSanger_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Frederick Sanger"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="submitAnswers"
+                android:text="Submit" />
+
+            <Button
+                android:id="@+id/reset_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="resetButton"
+                android:text="Reset" />
+
+            <Button
+                android:id="@+id/exit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="exitApp"
+                android:text="Exit" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
